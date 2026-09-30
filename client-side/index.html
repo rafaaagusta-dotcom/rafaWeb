@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal web Rafa Augusta Aryasatya Kurniawan - Telkom University">
+  <title>Rafa Augusta Aryasatya Kurniawan | Personal Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <img class="foto" src="fotoAing.jpeg" alt="Foto Rafa Augusta Aryasatya Kurniawan">
+    <h1>Rafa Augusta Aryasatya Kurniawan</h1>
+    <h3>102022500365 / Fakultas Rekayasa Industri / Sistem Informasi</h3>
+  </header>
+
+  <main>
+    <section>
+      <h2>Sosial Media</h2>
+      <p class="sosmed">
+        <a href="https://x.com/username" target="_blank" rel="noopener" aria-label="X">X</a>
+        <a href="https://github.com/rafaaagusta-dotcom" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+        <a href="https://instagram.com/rafaagsta" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+        <a href="https://linkedin.com/in/username" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Tentang Saya</h2>
+      <p>Halo! Saya mahasiswa yang suka belajar dengan hal-hal baru <br><span style="color:#d71920;font-weight:600">Di antara lain Pengembangan Aplikasi Web</span>. Halaman ini dibuat dengan HTML dan CSS.</p>
+      <h4>Biodata</h4>
+      <table>
+        <tr><th>Nama</th><td>Rafa Augusta Aryasatya Kurniawan</td></tr>
+        <tr><th>NIM</th><td>102022500365</td></tr>
+        <tr><th>Fakultas</th><td>Rekayasa Industri</td></tr>
+        <tr><th>Program Studi</th><td>Sistem Informasi</td></tr>
+        <tr><th>Universitas</th><td>Telkom University</td></tr>
+      </table>
+      <h5>Diakses pada</h5>
+      <p><time id="waktu"></time></p>
+    </section>
+  </main>
+
+  <footer><h6>&copy; 2026 Rafa Augusta Aryasatya kurniawan &mdash; Pengembangan Aplikasi Web</h6></footer>
+
+  <script>
+    var w = document.getElementById('waktu');
+    var d = new Date();
+    w.dateTime = d.toISOString();
+    w.textContent = d.toLocaleDateString('id-ID', {dateStyle: 'full'}) + ', ' + d.toLocaleTimeString('id-ID');
+  </script>
+</body>
+</html>

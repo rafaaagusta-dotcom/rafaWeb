@@ -1,0 +1,20 @@
+:root{--merah:#d71920;--arang:#2b2d31;--abu:#6b7280;--latar:#f3f4f6;--putih:#fff}
+@media (prefers-color-scheme:dark){:root{--arang:#f1f2f4;--abu:#a1a7b3;--latar:#1c1e22;--putih:#26292f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--latar);color:var(--arang);font-family:'Poppins',Arial,sans-serif;line-height:1.6;text-align:center}
+header{background:var(--merah);color:#fff;padding:48px 16px 88px}
+header h1{margin:16px 0 4px;font-size:2rem;font-weight:700}
+header h3{margin:0;font-weight:400;font-size:1rem;opacity:.92}
+.foto{width:160px;height:160px;border-radius:50%;object-fit:cover;border:6px solid #fff;background:#e5e7eb}
+main{max-width:640px;margin:-56px auto 0;padding:0 16px 40px}
+section{background:var(--putih);border-radius:12px;padding:24px;margin-bottom:20px}
+h2{margin:0 0 8px;font-size:1.25rem}
+h4,h5{margin:16px 0 4px;color:var(--abu);font-weight:500}
+h6{margin:0;font-size:.8rem;color:var(--abu);font-weight:400}
+.sosmed{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:0}
+.sosmed a{width:48px;height:48px;border-radius:50%;border:2px solid var(--merah);color:var(--merah);display:grid;place-items:center;font-weight:600;text-decoration:none}
+.sosmed a:hover,.sosmed a:focus-visible{background:var(--merah);color:#fff;outline:none}
+table{margin:0 auto;border-collapse:collapse;width:100%;text-align:left}
+th,td{padding:8px 12px;border-bottom:1px solid var(--latar)}
+th{width:35%;color:var(--abu);font-weight:500}
+footer{padding:0 16px 32px}
